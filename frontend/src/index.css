@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* If you are using a custom theme in v4, you define variables here */
+@theme {
+  --color-background: #0b1221;
+  --color-card: #151c2e;
+  --color-border: #1e293b;
+}
+
+body {
+  background-color: var(--color-background);
+  color: white;
+  font-family: sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 222.2 84% 4.9%; /* Deep Navy Background */
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --primary: 142.1 70.6% 45.3%; /* Emerald Green for Submit */
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+  }
+}
+
+body {
+  @apply bg-[#0b1221] text-white; /* Matching the exact reference color */
+}
